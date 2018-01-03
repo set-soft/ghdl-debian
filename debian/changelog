@@ -1,3 +1,10 @@
+ghdl (0.35+20180102gitbefe6fa-1) unstable; urgency=medium
+
+  * Unofficial Debian package.
+  * GIT hash befe6faf5f902f58e8d64c423526e86337a2b025
+
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Tue, 02 Jan 2018 12:31:19 -0300
+
 ghdl (0.34+20171115git185840b-1) unstable; urgency=medium
 
   * Unofficial Debian package.

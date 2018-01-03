@@ -2,6 +2,7 @@
 # -*- makefile -*-
 
 DESTDIR=$(CURDIR)/debian/ghdl
+DESTDIRLIB=$(CURDIR)/debian/libghdlsynth
 
 configure: configure-stamp
 configure-stamp:
@@ -15,6 +16,7 @@ build-indep: build-stamp
 build-stamp: configure-stamp
 	dh_testdir
 	$(MAKE)
+	$(MAKE) libghdlsynth.so
 	makeinfo doc/ghdl.texi
 	touch build-stamp
 
@@ -24,6 +26,8 @@ install-stamp: build-stamp
 	dh_testroot
 	dh_prep
 	$(MAKE) install DESTDIR=$(DESTDIR)
+	$(MAKE) install.libghdlsynth.shared DESTDIR=$(DESTDIRLIB)
+	rm -r $(DESTDIRLIB)/usr/bin $(DESTDIRLIB)/usr/lib/ghdl
 	touch install-stamp
 
 clean:
