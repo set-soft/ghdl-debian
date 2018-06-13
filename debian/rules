@@ -26,7 +26,7 @@ install-stamp: build-stamp
 	dh_testroot
 	dh_prep
 	$(MAKE) install DESTDIR=$(DESTDIR)
-	$(MAKE) install.libghdlsynth.shared DESTDIR=$(DESTDIRLIB)
+	$(MAKE) install.libghdlsynth DESTDIR=$(DESTDIRLIB)
 	rm -r $(DESTDIRLIB)/usr/bin $(DESTDIRLIB)/usr/lib/ghdl
 	touch install-stamp
 
