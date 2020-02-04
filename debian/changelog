@@ -1,9 +1,9 @@
-ghdl (0.35+20180315git0edf0a1-1) UNRELEASED; urgency=medium
+ghdl (0.37dev+20200204git1739aa5-1) unstable; urgency=medium
 
   * Unofficial Debian package.
   * GIT hash 0edf0a10c5f2f45c92bdce6d0f80de9790e205fa
 
- -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Wed, 21 Mar 2018 09:52:48 -0300
+ -- Salvador Eduardo Tropea <salvador@inti.gob.ar>  Tue, 04 Feb 2020 12:33:26 -0300
 
 ghdl (0.35+20180102gitbefe6fa-1) unstable; urgency=medium
 

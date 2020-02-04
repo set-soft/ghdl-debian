@@ -7,7 +7,7 @@ DESTDIRLIB=$(CURDIR)/debian/libghdlsynth
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	./configure --with-llvm-config --prefix=/usr
+	./configure --with-llvm-config --enable-synth --prefix=/usr
 	touch configure-stamp
 
 build: build-arch build-indep
