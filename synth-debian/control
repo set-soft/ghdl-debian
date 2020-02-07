@@ -1,0 +1,18 @@
+Source: libghdlsynth
+Section: libs
+Priority: optional
+Maintainer: Salvador E. Tropea <set@ieee.org>
+Build-Depends: debhelper (>= 9), yosys-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/tgingold/ghdlsynth-beta
+
+Package: libghdlsynth
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, yosys (>= 0.9), GHDL (>= 0.37)
+Description: Library for VHDL synthesis using GHDL and Yosys
+ This library is a Yosys plug-in to enable VHDL synthesis using GHDL.
+
+
